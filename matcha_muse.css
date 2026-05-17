@@ -6,14 +6,16 @@ body{
         nav {
             position: fixed;
             top: 0;
-            width: 100%;
+            left: 0;
+            right: 0;
             background-color: rgba(103, 6, 38, 0.95);
             backdrop-filter: blur(10px);
             z-index: 100;
-            padding: 15px 5%;
+            padding: 15px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-sizing: border-box;
             border-bottom: 1px solid rgba(255,255,255,0.1);
         }
         .logo{
@@ -26,7 +28,7 @@ body{
             gap: 30px;
         }
         .nav-links a{
-            color: #f5f0d8;
+            color: #bad797;
             font-size: 16px;
             transition: color 0.3s;
         }
@@ -77,70 +79,72 @@ body{
         .star1{
             position:absolute;
             color: #f6f1d5;
-            opacity: 0.3;
-            left: 40px;
+            opacity: 0.4;
+            left: 3%;
+            top: 10%;
         }
         .star2{
             position:absolute;
             color: #f6f1d5;
-            opacity: 0.3;
-            left: 500px;
-            top: 300px;
+            opacity: 0.4;
+            left: 38%;
+            top: 42%;
         }
         .star3{
             position:absolute;
             color: #f6f1d5;
-            opacity: 0.3;
-            left: 300px;
+            opacity: 0.4;
+            left: 12%;
+            left: 22%;
         }
         .star4{
             position:absolute;
             color: #f6f1d5;
-            opacity: 0.3;
-            right: 410px;
-            bottom: 500px;
+            opacity: 0.4;
+            top: 22%;
+            right: 24%;
         }
         .star5{
             position:absolute;
             color: #f6f1d5;
-            opacity: 0.3;
-            left: 900px;
-            top: 550px;
+            opacity: 0.4;
+            left: 68%;
+            top: 78%;
         }
         .star6{
             position:absolute;
             color: #f6f1d5;
-            opacity: 0.3;
-            right: 700px;
-            top: 500px;
+            opacity: 0.4;
+            left: 52%;
+            top: 70%;
         }
         .star7{
             position:absolute;
             color: #f6f1d5;
-            opacity: 0.3;
-            right: 40px;
-            top: 100px;
+            opacity: 0.4;
+            top: 14%;
+            right: 3%;
         }
         .star8{
             position:absolute;
             color: #f6f1d5;
-            opacity: 0.3;
-            left: 160px;
-            bottom: 500px;
+            opacity: 0.4;
+            top: 30%;
+            left: 12%;
         }
         .star9{
             position:absolute;
             color: #f6f1d5;
-            opacity: 0.3;
-            left: 80px;
-            bottom: 90px;
+            opacity: 0.4;
+            left: 6%;
+            bottom: 8%;
         }
         .star10{
             position:absolute;
             color: #f6f1d5;
-            opacity: 0.3;
-            left: 700px;
-            top: 400px;
+            opacity: 0.4;
+            left: 48%;
+            top: 56%;
         }
         .drink{
             font-style: oblique;
@@ -180,7 +184,12 @@ body{
             font-weight: bold;
             padding: 8px 24px;
             border-radius: 50px;
+            cursor: pointer;
             box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        .price_tag:hover{
+            transition: 0.5s;
+            transform: scale(1.1);
         }
         .bottom{
             font-style: oblique;
@@ -192,3 +201,33 @@ body{
             letter-spacing:1px;
             line-height:25px;
         }
+        @media(max-width:600px){
+            body{
+                overflow: hidden;
+            }
+            .matcha{
+                width: 200px;
+                left: 280px;
+                top: 200px;
+            }
+            .nav-links{
+                gap:12px;
+            }
+        @media(max-width:768px){
+            .matcha{
+                width:220px;
+                padding: 0 50px 
+            }
+            .title{
+                font-size:38px;
+            }
+            .subtitle{
+                padding: 5px;
+                font-size:16px;
+            }
+            .nav-links{
+                gap:14px;
+                font-size:14px;
+            }
+        }
+    }
